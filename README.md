@@ -1,9 +1,9 @@
 # WebLab1
 # первая лаба https://wackyso.github.io/WebLab1/Лабораторная%20работа%201/Lab%201%20.html
 # 2  https://wackyso.github.io/WebLab1/Лабораторная%20работа%202/Lab%202%20.html
-# 3  https://wackyso.github.io/WebLab1/Лабораторная%20работа%204/Lab%204.html
-# 4  https://wackyso.github.io/WebLab1/
-# 5  https://wackyso.github.io/WebLab1/
+# 3  
+# 4  https://wackyso.github.io/WebLab1/Лабораторная%20работа%204/Lab%204.html
+# 5  https://wackyso.github.io/WebLab1/Лабораторная%20работа%205/Снимок.PNG
 # 6  https://wackyso.github.io/WebLab1/
 # 7  https://wackyso.github.io/WebLab1/
 # 8  https://wackyso.github.io/WebLab1/
