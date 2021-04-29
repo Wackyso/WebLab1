@@ -63,26 +63,37 @@ document.getElementById("2").textContent = quest[testId]["2"]
 document.getElementById("3").textContent = quest[testId]["3"]
     }
     else {
-        for (let i =0; i<5;i++)
-        {
-            if (+res[i] === +trueAnsw[i]) {bal++;}
+        for(let i=0;i<20; i++){
+            let rt = axios({
+                method: 'post',
+                url: 'https://www.univer.kharkov.ua/en/xmlrpc.php',
+                responseType: 'application/json'
+              })
         }
-        
-        if (bal < 5){
-        window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-        }
-        else {
-            document.getElementById("q").textContent = "Вы справились с тестом"
-        }
+        let getRes = axios({
+            method: 'post',
+            url: 'https://localhost:51915/api/homecontroller/create',
+            responseType: 'application/json',
+            data: {res}
+          }).then((resp) => {
+            let bal = Number(resp.data)
+            
+            if (bal < 5){
+                window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+                }
+                else {
+                    document.getElementById("q").textContent = "Вы справились с тестом"
+                }
+                
+                }).onError(()=> {
+                    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+                })
     }
 
 
-    let rt = axios({
-        method: 'get',
-        url: 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5',
-        responseType: 'application/json'
-      })
     
+      
+      
 
 
     // console.log(s)
